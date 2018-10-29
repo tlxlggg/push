@@ -1,0 +1,13 @@
+server:
+  port: 6060
+
+spring:
+  profiles: dev1
+eureka:
+  instance:
+    hostname: dev1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://dev2/eureka/
