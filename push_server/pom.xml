@@ -17,6 +17,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
+		<!-- consul注册中心 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -24,6 +25,12 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+		</dependency>
+		
+		<!-- Flyway 数据库版本管理 -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
 		</dependency>
 		
 		<dependency>

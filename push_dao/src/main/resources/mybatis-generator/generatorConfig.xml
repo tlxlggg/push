@@ -47,7 +47,7 @@
 
 		<!-- 生成实体类地址 -->
 		<javaModelGenerator 
-			targetPackage="com.tl.push_bean.test"
+			targetPackage="com.tl.push_bean.user"
 			targetProject="E:\code\push\push_bean\src\main\java">
 			<property name="enableSubPackages" value="false" />
 			<property name="trimStrings" value="true" />
@@ -56,7 +56,7 @@
 		
 		<!-- 生成mapxml文件 -->
 		<sqlMapGenerator 
-			targetPackage="mapper/test"
+			targetPackage="mapper/user"
 			targetProject="${resources}">
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
@@ -64,14 +64,14 @@
 		
 		<!-- 生成mapxml对应client，也就是接口dao -->
 		<javaClientGenerator 
-			targetPackage="com.tl.push_dao.test"
+			targetPackage="com.tl.push_dao.user"
 			targetProject="${project}" 
 			type="XMLMAPPER">
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 		
-		<table tableName="test"
-				domainObjectName="Test"
+		<table tableName="a_user_detail"
+				domainObjectName="UserDetail"
 				schema="${schema}"
 				enableInsert="true"
 				enableSelectByPrimaryKey="true"
